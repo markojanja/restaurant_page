@@ -4,7 +4,7 @@ import { loadAbout } from "./aboutPage"
 import { loadMenu } from "./menuPage"
 const CreateNavbar = () =>{
     const nav = document.createElement('nav')
-    const navLinkContiner =  document.createElement('ul')
+    const navLinks =  document.createElement('ul')
     const navLinkHome = document.createElement('li')
     navLinkHome.classList.add('nav-btn')
     navLinkHome.setAttribute('data-target', 'home')
@@ -15,15 +15,15 @@ const CreateNavbar = () =>{
     navLinkAbout.classList.add('nav-btn')
     navLinkAbout.setAttribute('data-target', 'about')
 
-    nav.appendChild(navLinkContiner)
+    nav.appendChild(navLinks)
 
-    navLinkContiner.appendChild(navLinkHome)
-    navLinkContiner.appendChild(navLinkMenu)
-    navLinkContiner.appendChild(navLinkAbout)
+    navLinks.appendChild(navLinkHome)
+    navLinks.appendChild(navLinkMenu)
+    navLinks.appendChild(navLinkAbout)
 
     navLinkHome.textContent = 'Home';
     navLinkMenu.textContent = 'Menu';
-    navLinkAbout.textContent = 'About';
+    navLinkAbout.textContent = 'About Us';
 
     return nav
 }
@@ -83,7 +83,7 @@ function setActive(button){
     const buttons = document.querySelectorAll('.nav-btn')
 
     buttons.forEach((btn) =>{
-        (btn!==this) ? btn.classList.remove('active'):false
+        if(btn!==this)  btn.classList.remove('active')
     })
     button.classList.add('active')
 }

@@ -1,10 +1,14 @@
+import { createTextElement } from "./general";
+
 const createHome = () =>{
     
     const home = document.createElement('div')
+    home.classList.add('home')
     const heading = document.createElement("h1")
-    home.style.background = "url('./assets/banner.jpg') no-repeat center center / cover";
-    heading.textContent = 'My awesome website '
+    const copy = createTextElement('p', "Discover the Ultimate Spanish Dining Experience at Our Authentic Restaurant in Barcelona!")
+    heading.textContent = 'El Jardín de España '
     home.appendChild(heading)
+    home.appendChild(copy)
     return home
 }
 

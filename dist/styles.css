@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+ul{
+    position: relative;
+ 
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+li{
+    font-size: 1.5rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+img{
+    display: block;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+nav,footer{
+    background-color:#020202
+
+}
+footer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: aliceblue;
+}
+#content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    min-height: 100vh;
+    background-color: #020202;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    flex: 1;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    min-height: 100%;
+    background: url('./assets/banner.jpg') no-repeat center center / cover;
+
+    z-index: 2;
+}
+.home h1{
+    font-size: 3.5rem;
+    color: darkgoldenrod
+}
+.home p{
+    font-size: 2rem;
+    color: aliceblue;
+}
+.home p, .home h1{
+    position: relative;
+    z-index: 100;
+}
+.home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
