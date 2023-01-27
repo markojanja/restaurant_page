@@ -37,7 +37,7 @@ const CreateMain = ()=>{
 const CreateFooter = ()=>{
     const footer = document.createElement('footer')
     const paragraph = document.createElement("p")
-    paragraph.textContent = 'Copywrite \u00A9 2023 MarkoJanja '
+    paragraph.textContent = 'Copyright \u00A9 2023 MarkoJanja '
     footer.appendChild(paragraph)
 
 
