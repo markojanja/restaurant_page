@@ -8,6 +8,7 @@ const createImgElement =(imagePath, text)=>{
 
     const element = document.createElement('img')
     element.src = imagePath
+    element.setAttribute("loading","lazy")
     
     return element
 }
