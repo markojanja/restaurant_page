@@ -1,8 +1,8 @@
 class MenuItem{
-    constructor(title,desc){
-        this.title,
-        this.title,
-        this.image
+    constructor(title,desc,image){
+        this.title = title
+        this.title = desc
+        this.image = image
     }
 }
 

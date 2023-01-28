@@ -5,7 +5,6 @@ import { createMenuList } from "./menuItems"
 const createMenu = ()=>{
     const menuTitle = createTextElement('h1',"Menu")
     const menuList1 = createMenuList()
-    console.log(menuList1)
     const menu = document.createElement('div')
     menu.classList.add('menu')
     menu.appendChild(menuTitle)

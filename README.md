@@ -23,9 +23,3 @@ Welcome to  Spanish restaurant website! I have created this site using Vanilla J
 - webpack
 - ES6 modules
 
-## Authors
-- Your name
-- Additional contributors (if any)
-
-## License
-This project is licensed under the [insert license here] license.
